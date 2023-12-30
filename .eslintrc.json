@@ -1,3 +1,58 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals", "airbnb", "prettier"],
+  "plugins": ["unused-imports", "prettier"],
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@", "./src"],
+          ["assets", "./public/assets"]
+        ]
+      }
+    }
+  },
+  "ignorePatterns": ["tailwind.config.js"],
+  "rules": {
+    "prettier/prettier": "warn",
+    "quotes": ["error", "single"],
+    "no-console": [
+      "warn",
+      {
+        "allow": ["warn", "error"]
+      }
+    ],
+    "no-unused-vars": "off",
+    "indent": ["error", 2],
+    "react/jsx-filename-extension": [0],
+    "react/no-unstable-nested-components": ["error", { "allowAsProps": true }],
+    "react/prop-types": "off",
+    "react/jsx-props-no-spreading": "off",
+    "import/extensions": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/button-has-type": "off",
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ]
+  },
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "parserOptions": {
+    "project": "./jsconfig.json"
+  }
 }

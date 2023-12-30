@@ -1,0 +1,13 @@
+{
+  "editor.formatOnSave": true,
+  "files.insertFinalNewline": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
+    "source.formatDocument": true,
+    // "source.fixAll.eslint": true,
+    "source.sortMembers": true,
+    "source.fixAll": true
+  },
+  // "eslint.validate": ["javascript"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
