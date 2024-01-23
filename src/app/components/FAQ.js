@@ -13,7 +13,10 @@ const FAQ = ({ data, activeIndex, wrapperClass }) => {
     <div className="flex justify-center mt-16 cursor-pointer">
       <div>
         {data.map((item, index) => (
-          <div key={item.key || item.title} className={`relative cursor-pointer ${wrapperClass || ''}`}>
+          <div
+            key={item.key || item.title}
+            className={`relative cursor-pointer ${wrapperClass || ''}`}
+          >
             <button
               className={`flex justify-between outline-none border-b transition duration-300 ease-in-out w-[830px] cursor-pointer ${
                 openIndex === index

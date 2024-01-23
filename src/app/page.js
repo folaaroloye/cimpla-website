@@ -350,34 +350,34 @@ const Home = () => {
         </section>
 
         <div>
-          <div className='flex justify-center'>
-             <div className="flex justify-between mt-20 w-[1205px]">
-            <Title
-              title="Our Products"
-              description="Access Our Freshest News and Updates"
-              titleClass="text-h3 font-semibold text-primary-700 text-left"
-              descriptionClass="text-h7 font-normal text-grey-400 text-left"
-            />
+          <div className="flex justify-center">
+            <div className="flex justify-between mt-20 w-[1205px]">
+              <Title
+                title="Our Products"
+                description="Access Our Freshest News and Updates"
+                titleClass="text-h3 font-semibold text-primary-700 text-left"
+                descriptionClass="text-h7 font-normal text-grey-400 text-left"
+              />
 
-            <div className="flex gap-10">
-              <Image
-                src={LeftArrow}
-                alt="left-arrow"
-                width={60}
-                height={60}
-                className="cursor-pointer navigation-arrow transform transition-transform ease-in-out duration-300 hover:scale-110"
-                onClick={onPrevious}
-              />
-              <Image
-                src={RightArrow}
-                alt="right-arrow"
-                width={60}
-                height={60}
-                className="cursor-pointer navigation-arrow transform transition-transform ease-in-out duration-300 hover:scale-110"
-                onClick={onNext}
-              />
+              <div className="flex gap-10">
+                <Image
+                  src={LeftArrow}
+                  alt="left-arrow"
+                  width={60}
+                  height={60}
+                  className="cursor-pointer navigation-arrow transform transition-transform ease-in-out duration-300 hover:scale-110"
+                  onClick={onPrevious}
+                />
+                <Image
+                  src={RightArrow}
+                  alt="right-arrow"
+                  width={60}
+                  height={60}
+                  className="cursor-pointer navigation-arrow transform transition-transform ease-in-out duration-300 hover:scale-110"
+                  onClick={onNext}
+                />
+              </div>
             </div>
-          </div>
           </div>
 
           <div className="flex justify-center items-center">
