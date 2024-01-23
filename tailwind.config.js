@@ -12,14 +12,14 @@ module.exports = {
     extend: {
       colors: {
         transparent: 'transparent',
-        primary:  {
-          100: "#D9DDFF",
-          200: "#A8B2FF",
-          300: "#7487FF",
-          400: "#295BFF",
-          500: "#003BBF",
-          600: "#002175",
-          700: "#000C3A",
+        primary: {
+          100 : "#D9DDFF",
+          200 : "#A8B2FF",
+          300 : "#7487FF",
+          400 : "#295BFF",
+          500 : "#003BBF",
+          600 : "#002175",
+          700 : "#000C3A",
         },
         secondary:  {
           100: "#FFEFD3",
@@ -30,17 +30,14 @@ module.exports = {
           600: "#513F00",
           700: "#2B2000",
         },
-        black: {
-          100: '#121212',
-          200: '#000000'
-        },
+        black: "#000C3A",
         white: '#FFFFFF',
         warning: '#F2BD37',
         grey: {
           100: '#DEDEE0',
           200: '#B6B7BB',
           300: '#909097',
-          400: '#6B6C74',
+          400: '#6B6C74', // correct
           500: '#494A50',
           600: '#2A2A2E',
           700: '#101113',
@@ -48,25 +45,18 @@ module.exports = {
         error: '#EB4028',
       },
       fontSize: {
-        sz0: ['0.75rem', '1rem'], // fontSize: 12px line-height: 16px
-        sz1: ['0.875rem', '1.125rem'], // fontSize: 14px line-height: 18px
-        sz2: ['0.875rem', '1.25rem'], // fontSize: 14px line-height: 20px
-        sz3: ['1rem', '1.25rem'], // fontSize: 16px line-height: 20px
-        sz4: ['1rem', '1.5rem'], // fontSize: 16px line-height: 24px
-        sz5: ['1.25rem', '1.5rem'], // fontSize: 20px line-height: 24px
-
-        sz6: ['1.5rem', '1.75rem'], // fontSize: 24px line-height: 28px
-        sz7: ['1.75rem', '2rem'], // fontSize: 28px line-height: 32px
-        sz8: ['2.5rem', '3rem'], // fontSize: 40px line-height: 48px
-        sz9: ['2rem', '2.5rem'], // fontSize: 40px line-height: 48p
-
-        display0: ['2rem', '2.5rem'], // fontSize: 40px line-height: 48px
-        h1: ['2.75rem', '3.75rem', '400'], // fontSize: 44px line-height: 60px font weight 400
-        h2: ['2.5rem', '3.5rem', '400'], // fontSize: 40px line-height: 56px font weight 400
-        h3: ['2.25rem', '3.25rem', '400'], // fontSize: 36px line-height: 52px font weight 400
-        h4: ['2rem', '3rem', '400'], // fontSize: 32px line-height: 48px font weight 400
-        h5: ['1.75rem', '2.25rem', '400'], // fontSize: 28px line-height: 36px font weight 400
-        h6: ['1.5rem', '1.75rem', '400'], // fontSize: 24px line-height: 28px font weight 400
+        h0: ['4rem', '4.375rem'], // fontSize: 64px line-height: 70px
+        h1: ['3rem', '4rem'], // fontSize: 48px line-height: 64px
+        h2: ['2.75rem', '3.75rem'], // fontSize: 44px line-height: 60px
+        h3: ['2.5rem', '3.5rem'], // fontSize: 40px line-height: 56px
+        h4: ['2.25rem', '3.25rem'], // fontSize: 36px line-height: 52px
+        h5: ['2rem', '3rem'], // fontSize: 32px line-height: 48px
+        h6: ['1.75rem', '2.25rem'], // fontSize: 28px line-height: 36px
+        h7: ['1.5rem', '1.75rem'], // fontSize: 24px line-height: 28px
+        h8: ['1.25rem', '1.5rem'], // fontSize: 20px line-height: 24px
+        h9: ['1rem', '1.5rem'], // fontSize: 16px line-height: 24px
+        h10: ['0.875rem', '1.25rem'], // fontSize: 14px line-height: 20px
+        h11: ['0.75rem', '1rem'], // fontSize: 12px line-height: 16px
       },
       width: {
         '66': '4.125rem',

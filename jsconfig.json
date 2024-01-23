@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "jsx": "react",
     "paths": {
       "@/*": ["./src/*"],
       "pages/*": ["src/app/pages/*"],
-      "components/*": ["src/app/components/*"],
+      "components/*": ["src/app/components/*"]
     }
   }
 }
