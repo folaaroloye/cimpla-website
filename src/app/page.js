@@ -23,11 +23,11 @@ import RiskDecisioning from './assets/image/risk.svg';
 import CustomizableSolution from './assets/image/solutions.svg';
 import AppButton from './components/AppButton';
 import Card from './components/Card';
+import ErrorBoundary from './components/ErrorBoundary';
 import FAQ from './components/FAQ';
-import Footer from './components/footer';
-import Navbar from './components/navbar';
 import Tabs from './components/Tabs';
 import Title from './components/Title';
+import Layout from './layouts';
 import colors from './utils/colors';
 
 const Home = () => {
@@ -247,9 +247,8 @@ const Home = () => {
   }, [activeProduct]);
 
   return (
-    <main className="min-h-screen">
-      <Navbar />
-      <section className="px-20">
+    <ErrorBoundary>
+      <Layout>
         <section className="h-[668px] flex justify-center items-center hero-page">
           <div>
             <div>
@@ -483,9 +482,8 @@ const Home = () => {
             descriptionClass="text-h8 font-medium text-primary-300 text-center"
           />
         </section>
-        <Footer />
-      </section>
-    </main>
+      </Layout>
+    </ErrorBoundary>
   );
 };
 
