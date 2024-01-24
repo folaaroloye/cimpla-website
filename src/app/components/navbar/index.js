@@ -20,20 +20,21 @@ const Navbar = () => (
         <span className="sr-only">Open main menu</span>
       </button>
 
-      <div className="flex items-center">
-        <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <div className="flex items-center gap-6">
+        <ul className="flex font-medium rounded-lg bg-white gap-6" style={{ whiteSpace: 'nowrap' }}>
           <li className="font-normal text-primary-200 text-h8 cursor-pointer">About Us</li>
           <li className="font-normal text-primary-200 text-h8 cursor-pointer">Product</li>
           <li className="font-normal text-primary-200 text-h8 cursor-pointer">Contact Us</li>
         </ul>
-
-        <AppButton
-          label="Get a Demo"
-          type="submit"
-          className="font-bold text-sz3 text-white w-[182px] ml-6"
-          icon={<ArrowRight className="ml-2 mt-1" />}
-          actionDir="ltr"
-        />
+        <div className="">
+          <AppButton
+            label="Get a Demo"
+            type="submit"
+            className="font-bold text-sz3 text-white !w-[182px]"
+            icon={<ArrowRight className="ml-2 mt-1" />}
+            actionDir="ltr"
+          />
+        </div>
       </div>
     </div>
   </nav>

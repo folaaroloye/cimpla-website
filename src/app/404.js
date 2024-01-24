@@ -1,9 +1,9 @@
 /* eslint-disable quotes */
 
-import Icon from 'assets/image/404-icon.png';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useCallback } from 'react';
+import Icon from './assets/image/404-icon.png';
 import AppButton from './components/AppButton';
 import Layout from './layouts';
 
